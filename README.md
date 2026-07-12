@@ -9,8 +9,8 @@
 ---
 
 ## 1. Nama Bisnis, Deskripsi, dan Value Proposition
-**Nama Bisnis:** Novationery — Toko Alat Tulis Kampus
-**Deskripsi:** Novationery adalah platform e-commerce berbasis web yang menyediakan berbagai kebutuhan alat tulis dan perlengkapan kampus dengan fokus pada kemudahan akses, harga terjangkau, dan pengalaman berbelanja yang interaktif (Single Page Application). 
+**Nama Bisnis:**Sovie Store — Toko Alat Tulis Kampus
+**Deskripsi:** Sovie Store adalah platform e-commerce berbasis web yang menyediakan berbagai kebutuhan alat tulis dan perlengkapan kampus dengan fokus pada kemudahan akses, harga terjangkau, dan pengalaman berbelanja yang interaktif (Single Page Application). 
 **Value Proposition:** - Menyediakan perlengkapan spesifik untuk kebutuhan mahasiswa.
 - Memberikan penawaran khusus mahasiswa (KTM Discount) dan Flash Sale harian.
 - Pengalaman berbelanja yang cepat (tanpa reload) dan terintegrasi langsung dengan WhatsApp untuk kemudahan komunikasi dan konfirmasi pembayaran.
@@ -27,7 +27,7 @@
 1. Toko Buku Gramedia (Skala besar, harga lebih premium, sangat lengkap).
 2. Fotokopi & Toko ATK sekitar kampus (Praktis tapi stok/katalog terbatas dan jarang memiliki platform online).
 3. E-commerce general (Shopee/Tokopedia) (Harga bersaing, namun bukan khusus ATK sehingga pencarian kurang spesifik dan biaya ongkir kadang membebani untuk barang receh).
-**Keunggulan Novationery:** Menggabungkan kurasi khusus ATK seperti toko fisik kampus dengan kepraktisan digital e-commerce dan pendekatan personal via WhatsApp.
+**Keunggulan Sovie Store:** Menggabungkan kurasi khusus ATK seperti toko fisik kampus dengan kepraktisan digital e-commerce dan pendekatan personal via WhatsApp.
 
 ## 4. Strategi Manajemen Produk & Katalog
 - **Kategorisasi Produk:** Katalog disusun dalam 4 kategori utama agar mudah dinavigasi: *Alat Tulis, Kertas, Perlengkapan, dan Seni*.
