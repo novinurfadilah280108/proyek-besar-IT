@@ -18,7 +18,7 @@ const DEFAULT_PRODUCTS = [
     { id: 9, name: 'Selotip Bening', category: 'Perlengkapan', price: 5000, stock: 45, image: 'images/selotip.jpg', discount: 0, discountType: 'none', sold: 210, rating: 4.0 },
     { id: 10, name: 'Gunting Kertas', category: 'Perlengkapan', price: 12000, stock: 18, image: 'images/gunting.jpg', discount: 0, discountType: 'none', sold: 75, rating: 4.3 },
     { id: 11, name: 'Krayon 12 Warna', category: 'Seni', price: 22000, stock: 12, image: 'images/krayon.jpg', discount: 0, discountType: 'none', sold: 40, rating: 4.9 },
-    { id: 12, name: 'Sticky Notes', category: 'Perlengkapan', price: 45000, stock: 8, image: 'images/sticky_note.jpg', discount: 30, discountType: 'flash', sold: 25, rating: 4.7 },
+    { id: 12, name: 'Sticky Notes', category: 'Perlengkapan', price: 45000, stock: 8, image: 'images/sticky/note.jpg', discount: 30, discountType: 'flash', sold: 25, rating: 4.7 },
     { id: 13, name: 'Buku Gambar A3', category: 'Kertas', price: 18000, stock: 10, image: 'images/buku_gambar.jpg', discount: 15, discountType: 'student', sold: 35, rating: 4.5 },
     { id: 14, name: 'Pensil Warna 24 Pcs', category: 'Seni', price: 35000, stock: 15, image: 'images/pensil_warna.jpg', discount: 25, discountType: 'flash', sold: 20, rating: 4.8 },
     { id: 15, name: 'Rautan Pensil', category: 'Alat Tulis', price: 6000, stock: 70, image: 'images/rautan.jpg', discount: 0, discountType: 'none', sold: 280, rating: 4.2 }
