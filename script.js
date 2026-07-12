@@ -63,18 +63,18 @@ function showToast(title, message, icon = '✅') {
 // ============================================================
 function init() {
     // Load dari localStorage
-    const stored = localStorage.getItem('novationery_products');
+    const stored = localStorage.getItem('Sovie Store_products');
     if (stored) {
         try { products = JSON.parse(stored); } catch { products = [...DEFAULT_PRODUCTS]; }
     } else {
         products = [...DEFAULT_PRODUCTS];
-        localStorage.setItem('novationery_products', JSON.stringify(products));
+        localStorage.setItem('Sovie Store_products', JSON.stringify(products));
     }
-    const cartStored = localStorage.getItem('novationery_cart');
+    const cartStored = localStorage.getItem('Sovie Store_cart');
     if (cartStored) {
         try { cart = JSON.parse(cartStored); } catch { cart = []; }
     }
-    isAdmin = sessionStorage.getItem('novationery_admin') === 'true';
+    isAdmin = sessionStorage.getItem('Sovie Store_admin') === 'true';
 
     startFlashSaleRotation();
     renderAll();
@@ -104,7 +104,7 @@ function rotateFlashSale() {
         p.discountType = 'flash';
         p.discount = Math.floor(Math.random() * 21) + 20;
     });
-    localStorage.setItem('novationery_products', JSON.stringify(products));
+    localStorage.setItem('Sovie Store_products', JSON.stringify(products));
     renderAll();
 }
 
@@ -324,13 +324,13 @@ function openWA(message) {
 }
 
 function getProfessionalMessage() {
-    return `Halo Novationery,
+    return `Halo Sovie Store,
 
 Saya tertarik dengan produk-produk Anda. Saya ingin bertanya/ membeli produk...
 
 Mohon informasinya lebih lanjut. Terima kasih. 🙏
 
--- Dari pelanggan Novationery`;
+-- Dari pelanggan Sovie Store`;
 }
 
 // ============================================================
@@ -352,7 +352,7 @@ function addToCart(id) {
         cart.push({ id, qty: 1 });
         showToast('Berhasil!', `${p.name} ditambahkan ke keranjang`, '✅');
     }
-    localStorage.setItem('novationery_cart', JSON.stringify(cart));
+    localStorage.setItem('Sovie Store_cart', JSON.stringify(cart));
     renderAll();
 }
 
@@ -365,13 +365,13 @@ function changeQty(id, delta) {
     if (newQty < 1) { removeFromCart(id); return; }
     if (newQty > p.stock) { alert('Stok tidak mencukupi!'); return; }
     item.qty = newQty;
-    localStorage.setItem('novationery_cart', JSON.stringify(cart));
+    localStorage.setItem('Sovie Store_cart', JSON.stringify(cart));
     renderAll();
 }
 
 function removeFromCart(id) {
     cart = cart.filter(i => i.id !== id);
-    localStorage.setItem('novationery_cart', JSON.stringify(cart));
+    localStorage.setItem('Sovie Store_cart', JSON.stringify(cart));
     renderAll();
 }
 
@@ -402,15 +402,15 @@ function editProduct(id) {
     p.discount = parseInt(newDisc) || 0;
     p.discountType = newDiscType.trim() || 'none';
     p.image = newImage.trim() || p.image;
-    localStorage.setItem('novationery_products', JSON.stringify(products));
+    localStorage.setItem('Sovie Store_products', JSON.stringify(products));
     renderAll();
 }
 
 function deleteProduct(id) {
     products = products.filter(p => p.id !== id);
     cart = cart.filter(item => item.id !== id);
-    localStorage.setItem('novationery_products', JSON.stringify(products));
-    localStorage.setItem('novationery_cart', JSON.stringify(cart));
+    localStorage.setItem('Sovie Store_products', JSON.stringify(products));
+    localStorage.setItem('Sovie Store_cart', JSON.stringify(cart));
     renderAll();
 }
 
@@ -506,7 +506,7 @@ function attachEvents() {
         const pass = document.getElementById('login-password').value;
         if (user === 'admin' && pass === 'admin123') {
             isAdmin = true;
-            sessionStorage.setItem('novationery_admin', 'true');
+            sessionStorage.setItem('Sovie Store_admin', 'true');
             navigate('admin-dashboard');
             renderAll();
         } else {
@@ -516,7 +516,7 @@ function attachEvents() {
 
     document.getElementById('btn-logout').addEventListener('click', function() {
         isAdmin = false;
-        sessionStorage.removeItem('novationery_admin');
+        sessionStorage.removeItem('Sovie Store_admin');
         navigate('admin-login');
         renderAll();
     });
@@ -638,8 +638,8 @@ function attachEvents() {
                 }
             });
             cart = [];
-            localStorage.setItem('novationery_products', JSON.stringify(products));
-            localStorage.setItem('novationery_cart', JSON.stringify(cart));
+            localStorage.setItem('Sovie Store_products', JSON.stringify(products));
+            localStorage.setItem('Sovie Store_cart', JSON.stringify(cart));
             renderAll();
         }, 3000);
     });
@@ -664,7 +664,7 @@ function attachEvents() {
             return line;
         }).join('\n');
 
-        let message = `*📋 Bukti Pembayaran Novationery*
+        let message = `*📋 Bukti Pembayaran Sovie Store*
 
 ID Transaksi: ${txId}
 
@@ -731,7 +731,7 @@ Terima kasih.`;
             sold: 0,
             rating: 0
         });
-        localStorage.setItem('novationery_products', JSON.stringify(products));
+        localStorage.setItem('Sovie Store_products', JSON.stringify(products));
         renderAll();
         this.reset();
         alert('Produk berhasil ditambahkan!');
