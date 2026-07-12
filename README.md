@@ -1,4 +1,4 @@
-# Business Overview: Novationery 📚✨
+# Business Overview: Sovie Store 📚✨
 
 **Informasi Mahasiswa**
 - **Nama:** Novi Nur Fadilah
