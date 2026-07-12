@@ -1,5 +1,5 @@
 /**
- * Novationery — Main JavaScript
+ *Sovie Store — Main JavaScript
  * Fitur: Notifikasi toast, Biodata checkout, WA detail lengkap
  */
 
